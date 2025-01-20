@@ -41,7 +41,7 @@ const page = ({params}: any) => {
    return (
       <div>
          <section className="sm:h-[406px] border grid grid-cols-1 md:grid-cols-2 justify-between">
-            <div className="border">{Blog[params.id - 1].title}</div>
+            <div className="border montserrat font-[500] text-[16px]">{Blog[params.id - 1].title}</div>
             <div>
                <Image src={cover} alt="cover" className="w-[507px] h-[326px]" />
             </div>
