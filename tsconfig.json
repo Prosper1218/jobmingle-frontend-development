@@ -1,0 +1,38 @@
+{
+	"compilerOptions": {
+		"lib": ["dom", "dom.iterable", "esnext"],
+		"allowJs": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"noEmit": true,
+		"target": "es2015",
+		"esModuleInterop": true,
+		"module": "esnext",
+		"moduleResolution": "bundler",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"jsx": "preserve",
+		"incremental": true,
+		"plugins": [
+			{
+				"name": "next"
+			}
+		],
+		"paths": {
+			"@/*": ["./*"]
+		}
+	},
+	"include": [
+		"next-env.d.ts",
+		"**/*.ts",
+		"**/*.tsx",
+		".next/types/**/*.ts",
+		"Components/SuccessModal.tsx",
+		"app/_contexts/auth/AuthState.jsx",
+		"app/_components/ui/Pagination.tsx",
+		"app/__loading.js",
+		"app/_hooks/apiSlices.js",
+		"app/_app.js"
+	],
+	"exclude": ["node_modules"]
+}
